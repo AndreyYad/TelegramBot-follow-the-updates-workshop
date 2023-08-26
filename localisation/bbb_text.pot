@@ -1,0 +1,13 @@
+msgid ""
+msgstr ""
+"Language: \n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: номер_строки_в_исходном_файле
+msgid "lang"
+msgstr ""
+
+#: номер_строки_в_исходном_файле
+msgid "start"
+msgstr ""
