@@ -9,5 +9,29 @@ msgid "lang"
 msgstr ""
 
 #: номер_строки_в_исходном_файле
+msgid "lang_changed"
+msgstr ""
+
+#: номер_строки_в_исходном_файле
 msgid "start"
+msgstr ""
+
+#: markups.py:17
+msgid "list_works"
+msgstr ""
+
+#: markups.py:18
+msgid "add_work"
+msgstr ""
+
+#: номер_строки_в_исходном_файле
+msgid "add_work_text"
+msgstr ""
+
+#: номер_строки_в_исходном_файле
+msgid "cancel"
+msgstr ""
+
+#: номер_строки_в_исходном_файле
+msgid "work_not_found"
 msgstr ""

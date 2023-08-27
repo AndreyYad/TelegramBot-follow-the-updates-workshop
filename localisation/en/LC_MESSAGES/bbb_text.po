@@ -16,10 +16,38 @@ msgid "lang"
 msgstr "Choose language"
 
 #: номер_строки_в_исходном_файле
+msgid "lang_changed"
+msgstr "Language changed"
+
+#: номер_строки_в_исходном_файле
 msgid "start"
 msgstr ""
 "Hello!\n"
 "\n"
-"This is Big Brother Bot. He will follow the updates of the works you are interested in in the Steam Workshop and notify you about them!\n"
+"This is Big Brother Bot. He will follow the updates of the works you are "
+"interested in the Steam Workshop and notify you about them!\n"
 "\n"
 "Literally 1984."
+
+#: markups.py:17
+msgid "list_works"
+msgstr "Works that you follow"
+
+#: markups.py:18
+msgid "add_work"
+msgstr "Add work"
+
+#: номер_строки_в_исходном_файле
+msgid "add_work_text"
+msgstr "Please send a link to the Steam Workshop work you want to follow."
+
+#: номер_строки_в_исходном_файле
+msgid "cancel"
+msgstr "Cancel"
+
+#: номер_строки_в_исходном_файле
+msgid "work_not_found"
+msgstr ""
+"Work not found\n"
+"\n"
+"<i>Make sure the link is correct</i>"
