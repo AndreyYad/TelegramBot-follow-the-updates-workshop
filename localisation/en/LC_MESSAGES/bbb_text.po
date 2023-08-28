@@ -48,6 +48,19 @@ msgstr "Cancel"
 #: номер_строки_в_исходном_файле
 msgid "work_not_found"
 msgstr ""
+"<b>Error</b>\n"
 "Work not found\n"
 "\n"
 "<i>Make sure the link is correct</i>"
+
+#: номер_строки_в_исходном_файле
+msgid "work_has_already"
+msgstr ""
+"<b>Error</b>\n"
+"You are already following this work!"
+
+#: номер_строки_в_исходном_файле
+msgid "your_list_works_text"
+msgstr ""
+"<b>Steam Workshop work you follow</b>:\n"
+"{}"

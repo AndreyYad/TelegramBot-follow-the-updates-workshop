@@ -18,32 +18,33 @@ print('Бот запущен!')
 
 @dp.message_handler(commands = ['start'])
 async def start_func(msg: Message):
-    await set_user_info(msg.chat.id)
-    await set_status(msg.chat.id, 'none')
-    await send_msg(msg.chat.id, 'start', await markup_start(msg.chat.id))
+    user_id = msg.chat.id
+    await set_user_info(user_id)
+    await set_status(user_id, 'none')
+    await send_msg(user_id, 'start', await markup_start(user_id))
 
 @dp.message_handler(commands = ['lang'])
-async def start_func(msg: Message):
+async def lang_func(msg: Message):
     await send_msg(msg.chat.id, 'lang', await markup_lang())
 
 @dp.message_handler()
 async def user_enter(msg: Message):
-
-    match await get_status(msg.chat.id):
+    user_id = msg.chat.id
+    match await get_status(user_id):
         case 'add_work':
             work_id = await search_id(msg.text)
-            if work_id != None:
-                pass
+            if work_id == None:
+                await send_msg(user_id, 'work_not_found')
+            elif work_id in await get_user_works(user_id):
+                await send_msg(user_id, 'work_has_already')
             else:
-                await send_msg(msg.chat.id, 'work_not_found')
+                await add_work(user_id, work_id)
 
 @dp.callback_query_handler()
 async def callback(call):
     user_id = call.message.chat.id
     msg_id = call.message.message_id
-
     edit_this = lambda msgid, markup=InlineKeyboardMarkup(): edit_msg(user_id, msg_id, msgid, markup)
-
     match call.data:
         case 'start':
             await set_status(user_id, 'none')

@@ -35,3 +35,11 @@ msgstr ""
 #: номер_строки_в_исходном_файле
 msgid "work_not_found"
 msgstr ""
+
+#: номер_строки_в_исходном_файле
+msgid "work_has_already"
+msgstr ""
+
+#: номер_строки_в_исходном_файле
+msgid "your_list_works_text"
+msgstr ""
